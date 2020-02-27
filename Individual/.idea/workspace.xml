@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ca99a08-bcd0-4511-96b8-343e887e88d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Individual.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/_n.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/_n.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/_n.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/segments_o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CreateIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CreateIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QueryIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueryIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Test1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Test1-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CreateIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CreateIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Test1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/QueryIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QueryIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-Test1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-Test1-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YGL9Dm3HOxC13f0k5irQ5IWX8c" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager" selected="Application.QueryIndex">
+    <configuration name="CreateIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CreateIndex" />
+      <module name="Test1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QueryIndex" />
+      <module name="Test1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CreateIndex" />
+      <item itemvalue="Application.QueryIndex" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QueryIndex" />
+        <item itemvalue="Application.CreateIndex" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ca99a08-bcd0-4511-96b8-343e887e88d9" name="Default Changelist" comment="" />
+      <created>1582563832997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582563832997</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2238" y="358" key="#Project_Structure" timestamp="1582563986162">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2238" y="358" key="#Project_Structure/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582563986162" />
+    <state x="1623" y="37" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582641017678">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582636551838" />
+    <state x="1623" y="37" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582641017678" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1582762906467">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1582762906467" />
+    <state x="2401" y="402" key="#xdebugger.evaluate" timestamp="1582664688757">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2401" y="402" key="#xdebugger.evaluate/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582664688757" />
+    <state x="888" y="-1198" key="FileChooserDialogImpl" timestamp="1582816742849">
+      <screen x="1" y="-1440" width="2560" height="1400" />
+    </state>
+    <state x="888" y="-1198" key="FileChooserDialogImpl/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582816742849" />
+    <state width="2517" height="253" key="GridCell.Tab.0.bottom" timestamp="1582825435003">
+      <screen x="1" y="-1440" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.bottom/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582825435003" />
+    <state width="1323" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582636685048" />
+    <state width="2517" height="253" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582807792036" />
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582799900672" />
+    <state width="2517" height="253" key="GridCell.Tab.0.center" timestamp="1582825435002">
+      <screen x="1" y="-1440" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.center/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582825435002" />
+    <state width="1323" height="168" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582636685047" />
+    <state width="2517" height="253" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582807792035" />
+    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582799900672" />
+    <state width="2517" height="253" key="GridCell.Tab.0.left" timestamp="1582825435002">
+      <screen x="1" y="-1440" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.left/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582825435002" />
+    <state width="1323" height="168" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582636685047" />
+    <state width="2517" height="253" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582807792035" />
+    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582799900672" />
+    <state width="2517" height="253" key="GridCell.Tab.0.right" timestamp="1582825435003">
+      <screen x="1" y="-1440" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.right/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582825435003" />
+    <state width="1323" height="168" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582636685048" />
+    <state width="2517" height="253" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582807792036" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582799900672" />
+    <state width="2517" height="491" key="GridCell.Tab.1.bottom" timestamp="1582752922695">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="491" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582752922695" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582647397021" />
+    <state width="2517" height="491" key="GridCell.Tab.1.center" timestamp="1582752922695">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="491" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582752922695" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1582647397021" />
+    <state width="2517" height="491" key="GridCell.Tab.1.left" timestamp="1582752922695">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="491" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582752922695" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1582647397021" />
+    <state width="2517" height="491" key="GridCell.Tab.1.right" timestamp="1582752922695">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="491" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582752922695" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1582647397021" />
+    <state x="2176" y="355" key="Maven.ArtifactSearchDialog" timestamp="1582637148799">
+      <screen x="1366" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2176" y="355" key="Maven.ArtifactSearchDialog/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582637148799" />
+    <state x="581" y="-1242" key="SettingsEditor" timestamp="1582817089708">
+      <screen x="1" y="-1440" width="2560" height="1400" />
+    </state>
+    <state x="581" y="-1242" key="SettingsEditor/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582817089708" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582565125552" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582648189139" />
+    <state x="368" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1582563856242">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="368" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582563856242" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1582756914073">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582628787907" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582756914073" />
+    <state x="649" y="-1346" width="1260" height="1304" key="search.everywhere.popup" timestamp="1582817007354">
+      <screen x="1" y="-1440" width="2560" height="1400" />
+    </state>
+    <state x="296" y="-1346" width="1260" height="1304" key="search.everywhere.popup/0.0.1366.728/-352.-1440.2560.1400@-352.-1440.2560.1400" timestamp="1582814852783" />
+    <state x="649" y="-1346" width="1260" height="1304" key="search.everywhere.popup/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582817007354" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582627866573" />
+    <state x="2014" y="94" width="1260" height="1304" key="search.everywhere.popup/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582664678642" />
+  </component>
+</project>
