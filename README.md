@@ -1,13 +1,13 @@
 # TCD_IR_2020_Indidivual
 
-Use the following procedure to connect to your Linux instance using an SSH client. If you receive an error while attempting to connect to your instance, see Troubleshooting Connecting to Your Instance.
+Use the following procedure to connect to the Ubuntu instance using an SSH client, build and run the source code then get the program's output.
 
 ## 1. To connect to the instance using SSH
 In a terminal window, use the ssh command to connect to the instance by entering the following command:
 ```shell
 ssh -i /path/my-key-pair.pem ubuntu@ec2-54-161-86-196.compute-1.amazonaws.com
 ```
-1. Instructions on how to build the source code:
+## 2. To build the source code:
 
 
 
