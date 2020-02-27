@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca99a08-bcd0-4511-96b8-343e887e88d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Individual.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/_n.cfe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/_n.cfs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/_n.si" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/segments_o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CreateIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CreateIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QueryIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueryIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Test1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Test1-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CreateIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CreateIndex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Test1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QueryIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QueryIndex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-Test1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-Test1-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -174,10 +155,10 @@
       <screen x="1366" y="0" width="2560" height="1400" />
     </state>
     <state x="2176" y="355" key="Maven.ArtifactSearchDialog/0.0.1366.728/1366.0.2560.1400@1366.0.2560.1400" timestamp="1582637148799" />
-    <state x="581" y="-1242" key="SettingsEditor" timestamp="1582817089708">
+    <state x="581" y="-1242" key="SettingsEditor" timestamp="1582827812295">
       <screen x="1" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="581" y="-1242" key="SettingsEditor/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582817089708" />
+    <state x="581" y="-1242" key="SettingsEditor/0.0.1366.728/1.-1440.2560.1400@1.-1440.2560.1400" timestamp="1582827812295" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728/1366.0.2560.1400@0.0.1366.728" timestamp="1582565125552" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582648189139" />
     <state x="368" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1582563856242">

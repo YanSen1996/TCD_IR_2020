@@ -9,5 +9,8 @@
         <module name="Test1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LuceneSearch" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
