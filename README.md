@@ -18,7 +18,7 @@ mvn package
 ```
 If successful, a response like the following would be shown:
 
-<div align=center>![Build_Success](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/1.png)
+![Build_Success](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/1.png)
 
 
 ## 3. Instructions on how to run the source code:
