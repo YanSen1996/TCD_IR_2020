@@ -11,7 +11,7 @@ IR_2020.pem could be found in the submitted files from blackboard.
 ## 2. To build the source code:
 Enter the path of the project by entering the following command:
 ```shell
-cd TCD_IR_2020/Individual/
+$ cd TCD_IR_2020/Individual/
 ```
 Then, use mvn command to build the source code by entering the command below in the terminal window:
 ```shell
