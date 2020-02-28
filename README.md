@@ -37,7 +37,7 @@ $ java -cp target/Test1-1.0-SNAPSHOT.jar QueryIndex
 A resopnse like the following wouldeb shown if successful:
 
 ![Create_Results](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/3.png)
-## 4. Instructions on how to get the program's output:
+## 4. To get the program's output:
 The project writes the results to a file called "results" which is in the folder with path "TCD_IR_2020\trec_eval-9.0.7\assignment\".
 Optional: use the following command to enter the folder and open the file:
 ```shell
@@ -45,11 +45,15 @@ $ cd ../trec_eval-9.0.7/assignment/
 $ xdg-open results
 ```
 After viewing, press 'w' and 'q' to quit the file.
-## 5. View the scores of the output:
+## 5. To view the scores of the output:
 Use 'cd' command to enter the folder of trec_eval by type these command in the terminal:
 ```shell
 $ cd
 $ cd  TCD_IR_2020/trec_eval-9.0.7/
+```
+Entering the command below to make sure trec_eval is available:
+```shell
+$ make
 ```
 For easier use, the QRelsCorrectedforTRECeval file has been renamed to 'qrels'. So, to view the scores, enter the command below:
 ```
