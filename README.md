@@ -16,9 +16,9 @@ Then, build the source code by entering the command below:
 ```shell
 mvn package
 ```
-If successful, a response, like the following, would be shown:
+If successful, a response like the following would be shown:
 
-![Build_Success](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/1.png)
+<div align=center>![Build_Success](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/1.png)
 
 
 ## 3. Instructions on how to run the source code:
