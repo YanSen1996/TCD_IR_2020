@@ -1,6 +1,6 @@
 # TCD_IR_2020_Indidivual
 
-### Use the following procedure to connect to the Ubuntu instance using an SSH client, build and run the source code then get the program's output.
+#### Use the following procedure to connect to the Ubuntu instance using an SSH client, build and run the source code then get the program's output.
 
 ## 1. To connect to the instance using SSH
 In a terminal window, use the ssh command to connect to the instance by entering the following command:
