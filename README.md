@@ -25,11 +25,18 @@ If successful, a response like the following would be shown:
 To create the index, please enter the following command in a terminal window:
 ```shell
 $ java -cp target/Test1-1.0-SNAPSHOT.jar CreateIndex
-···
+```
 If successful, a response like the following would be shown:
 
 ![Create_Success](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/2.png)
 
+Then, enter the following command to query the index:
+```shell
+$ java -cp target/Test1-1.0-SNAPSHOT.jar QueryIndex
+```
+A resopnse like the following wouldeb shown if successful:
+
+![Create_Results](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/3.png)
 ## 4. Instructions on how to get the program's output:
 
   The project writes the results to a file called "results" which is in the folder with path "TCD_IR_2020\trec_eval-9.0.7\assignment\"
