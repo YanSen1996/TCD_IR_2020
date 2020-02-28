@@ -55,6 +55,14 @@ Entering the command below to make sure trec_eval is available:
 ```shell
 $ make
 ```
+A response like below would be shown after this step:
+
+![Make](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/5.png)
+
+If 'make' command is already available, a response would be shown like below:
+
+![Exist](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/6.png)
+
 For easier use, the QRelsCorrectedforTRECeval file has been renamed to 'qrels'. So, to view the scores, enter the command below:
 ```
 $ ./trec_eval assignment/qrels assignment/results
