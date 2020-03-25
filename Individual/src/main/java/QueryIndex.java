@@ -37,8 +37,6 @@ public class QueryIndex {
         // Analyzer used by the query parser.
         // Must be the same as the one used when creating the index
         Analyzer analyzer = new EnglishAnalyzer();
-//        Analyzer analyzer = new StandardAnalyzer();
-//        Analyzer analyzer = new ClassicAnalyzer();
 
         // Open the folder that contains our search index
         Directory directory = FSDirectory.open(Paths.get(INDEX_DIRECTORY));
@@ -47,15 +45,13 @@ public class QueryIndex {
         DirectoryReader directoryReader = DirectoryReader.open(directory);
         IndexSearcher indexSearcher = new IndexSearcher(directoryReader);
         indexSearcher.setSimilarity(new BM25Similarity());
-//        indexSearcher.setSimilarity(new ClassicSimilarity());
-//        indexSearcher.setSimilarity(new BooleanSimilarity());
 
         // Open the query file
         String file = "../cran/cran.qry";
         String content = new String(Files.readAllBytes(Paths.get(file)));
         String[] queries = content.split("\\.I ");
 
-        // Delete the blacks
+        // Delete the blanks
         List<String> list = new ArrayList<String>();
         for (int i = 0; i < queries.length && queries.length > 0; i++) {
             if (queries[i] == null || "".equals(queries[i].trim().toString())) {
@@ -80,7 +76,6 @@ public class QueryIndex {
             ID[i] = split[0];
             Queries[i] = split[1];
         }
-
 
         // Create the query parser. The default search field is "words"
         QueryParser parser = new QueryParser("Words", analyzer);
@@ -110,10 +105,7 @@ public class QueryIndex {
                     resultsList.add(sResults);
                     System.out.println(outString);
                 }
-//                System.out.println();
             }
-            // prompt the user for input and quit the loop if they escape
-//            System.out.println(trec);
         }
 
         // Create a results file
