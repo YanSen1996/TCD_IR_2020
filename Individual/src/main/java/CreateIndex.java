@@ -1,7 +1,5 @@
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
-import org.apache.lucene.analysis.standard.ClassicAnalyzer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.StringField;
@@ -9,8 +7,6 @@ import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.search.similarities.BM25Similarity;
-import org.apache.lucene.search.similarities.BooleanSimilarity;
-import org.apache.lucene.search.similarities.ClassicSimilarity;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
@@ -28,8 +24,7 @@ public class CreateIndex {
     private Analyzer analyzer;
     private Directory directory;
 
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
         // Open the data
         String dataPath = "../cran/cran.all.1400";
 
@@ -57,17 +52,21 @@ public class CreateIndex {
         String[] docs = content.split("\\.I ");
 
         // Delete the blank items
-        List<String> list=new ArrayList<String>();
-        for (int i=0;i<docs.length && docs.length>0;i++) {
-            if (docs[i]==null||"".equals(docs[i].trim().toString())) { continue; }
-            else { list.add(docs[i]); }
+        List<String> list = new ArrayList<String>();
+        for (int i = 0; i < docs.length && docs.length > 0; i++) {
+            if (docs[i] == null || "".equals(docs[i].trim().toString())) {
+                continue;
+            } else {
+                list.add(docs[i]);
+            }
         }
-        String []newDocs=new String[list.size()];
-        for (int i=0;i<newDocs.length;i++) { newDocs[i] = list.get(i); }
+        String[] newDocs = new String[list.size()];
+        for (int i = 0; i < newDocs.length; i++) {
+            newDocs[i] = list.get(i);
+        }
 
         // Add all the individual documents to the list
-        for (String txt:newDocs)
-        {
+        for (String txt : newDocs) {
             // Load the text of the file
             String[] split = txt.split("\\.T|\\.A|\\.B|\\.W");
 
