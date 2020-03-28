@@ -108,13 +108,13 @@ public class QueryIndex {
                 if (txt.contains("not relevant") || txt.contains("irrelevant") || txt.contains(("unrelated to"))) {
                     Queries[i] = simpleQueries[i] + " But attention, " + txt.trim() + ".";
                 } else {
-                    Queries[i] = simpleQueries[i].trim();
+                    Queries[i] = simpleQueries[i].toLowerCase().trim();
                 }
             }
         }
 
         // Create the query parser. The default search field is "words"
-        QueryParser parser = new QueryParser("Words", analyzer);
+        QueryParser parser = new QueryParser("TEXT", analyzer);
 
         String queryString = "";
         List<String> resultsList = new ArrayList<>();
@@ -123,6 +123,7 @@ public class QueryIndex {
 
             // Trim leading and trailing whitespace from the query
             queryString = Queries[j].trim();
+
 
             // If the user entered a query string
             if (queryString.length() > 0) {
@@ -136,7 +137,8 @@ public class QueryIndex {
                 // Save the results
                 for (int i = 0; i < hits.length; i++) {
                     Document hitDoc = indexSearcher.doc(hits[i].doc);
-                    String sResults = (j + 1) + " 0 " + hitDoc.get("ID").trim() + " " + (i + 1) + " " + hits[i].score + " run-tag";
+
+                    String sResults = (j + 401) + " 0 " + hitDoc.get("DOCNO").trim() + " " + (i + 1) + " " + hits[i].score + " run-tag";
                     String outString = "Getting the result " + (i + 1) + " of query " + (j + 1) + "...";
                     resultsList.add(sResults);
                     System.out.println(outString);
