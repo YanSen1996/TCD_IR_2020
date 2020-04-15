@@ -65,7 +65,7 @@ If 'make' command is already available, a response would be shown like below:
 
 For easier use, the QRelsCorrectedforTRECeval file has been renamed to 'qrels'. So, to view the scores, enter the command below:
 ```
-$ ./trec_eval assignment/qrels assignment/results
+$ ./trec_eval individual/qrels individual/results
 ```
 The scores would be shown like below in the terminal.
 
