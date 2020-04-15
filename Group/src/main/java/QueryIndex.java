@@ -11,7 +11,6 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,7 +27,8 @@ public class QueryIndex {
     // Limit the number of search results we get
     private static int MAX_RESULTS = 1000;
 
-    public static void main(String[] args) throws IOException, ParseException, org.apache.lucene.queryparser.classic.ParseException {
+    public static void main(String[] args)
+            throws IOException, ParseException, org.apache.lucene.queryparser.classic.ParseException {
 
         // Analyzer used by the query parser, the same as the one used in index
         // EnglishAnalyzer shall be changed later
@@ -69,7 +69,8 @@ public class QueryIndex {
 
         for (int i = 0; i < newTopics.length; i++) {
             // Load the text of this topic
-            String[] split = newTopics[i].split("<num> Number: |<title> |<desc> Description: |<narr> Narrative: |</top>");
+            String[] split = newTopics[i]
+                    .split("<num> Number: |<title> |<desc> Description: |<narr> Narrative: |</top>");
 
             NUMBs[i] = split[1].trim();
             TITLs[i] = split[2].trim();
@@ -124,7 +125,6 @@ public class QueryIndex {
             // Trim leading and trailing whitespace from the query
             queryString = Queries[j].trim();
 
-
             // If the user entered a query string
             if (queryString.length() > 0) {
 
@@ -138,7 +138,8 @@ public class QueryIndex {
                 for (int i = 0; i < hits.length; i++) {
                     Document hitDoc = indexSearcher.doc(hits[i].doc);
 
-                    String sResults = (j + 401) + " 0 " + hitDoc.get("DOCNO").trim() + " " + (i + 1) + " " + hits[i].score + " run-tag";
+                    String sResults = (j + 401) + " 0 " + hitDoc.get("DOCNO").trim() + " " + (i + 1) + " "
+                            + hits[i].score + " run-tag";
                     String outString = "Getting the result " + (i + 1) + " of query " + (j + 1) + "...";
                     resultsList.add(sResults);
                     System.out.println(outString);
@@ -147,8 +148,6 @@ public class QueryIndex {
         }
 
         // Create a results file
-        File results = new File("results");
-        results.createNewFile();
         System.out.println("\nCreating results file...");
         BufferedWriter resultsWriter = new BufferedWriter(new FileWriter("../trec_eval-9.0.7/group/results"));
         for (String item : resultsList) {
