@@ -38,10 +38,10 @@ A resopnse like the following wouldeb shown if successful:
 
 ![Create_Results](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/3.png)
 ## 4. To get the program's output:
-The project writes the results to a file called "results" which is in the folder with path "TCD_IR_2020\trec_eval-9.0.7\assignment\".
+The project writes the results to a file called "results" which is in the folder with path "TCD_IR_2020\trec_eval-9.0.7\individual\".
 Optional: use the following command to enter the folder and open the file:
 ```shell
-$ cd ../trec_eval-9.0.7/assignment/
+$ cd ../trec_eval-9.0.7/individual/
 $ xdg-open results
 ```
 After viewing, press 'w' and 'q' to quit the file.
