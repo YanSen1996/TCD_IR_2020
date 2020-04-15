@@ -108,7 +108,7 @@ public class QueryIndex {
         File results = new File("results");
         results.createNewFile();
         System.out.println("\nCreating results file...");
-        BufferedWriter resultsWriter = new BufferedWriter(new FileWriter("../trec_eval-9.0.7/assignment/results"));
+        BufferedWriter resultsWriter = new BufferedWriter(new FileWriter("../trec_eval-9.0.7/individual/results"));
         for (String item : resultsList) {
             resultsWriter.write(item);
             resultsWriter.newLine();

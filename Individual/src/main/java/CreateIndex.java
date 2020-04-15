@@ -21,9 +21,6 @@ public class CreateIndex {
     // Directory where the search index will be saved
     private static String INDEX_DIRECTORY = "../Individual/index";
 
-    private Analyzer analyzer;
-    private Directory directory;
-
     public static void main(String[] args) throws IOException {
         // Open the data
         String dataPath = "../cran/cran.all.1400";
