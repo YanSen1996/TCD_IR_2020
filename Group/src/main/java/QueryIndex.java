@@ -12,6 +12,7 @@ import org.apache.lucene.store.FSDirectory;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -149,7 +150,14 @@ public class QueryIndex {
 
         // Create a results file
         System.out.println("\nCreating results file...");
-        BufferedWriter resultsWriter = new BufferedWriter(new FileWriter("../trec_eval-9.0.7/group/results"));
+        String RESULTS_DIRECTOTY = "../trec_eval-9.0.7/group/results";
+        File result = new File(RESULTS_DIRECTOTY);
+        if (!result.exists()){
+            File dir = new File(result.getParent());
+            dir.mkdirs();
+            result.createNewFile();
+        }
+        BufferedWriter resultsWriter = new BufferedWriter(new FileWriter(RESULTS_DIRECTOTY));
         for (String item : resultsList) {
             resultsWriter.write(item);
             resultsWriter.newLine();

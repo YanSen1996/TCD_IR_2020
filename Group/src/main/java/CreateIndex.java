@@ -26,7 +26,7 @@ import java.util.Stack;
 
 public class CreateIndex {
 
-    private static Object BM25Similarity;
+    // private static Object BM25Similarity;
 
     private CreateIndex() {
     }

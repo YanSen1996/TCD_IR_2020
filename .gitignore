@@ -1,0 +1,7 @@
+# ignore the index folders
+Group/index/
+Individual/index/
+
+# ignore the results files
+trec_eval-9.0.7/group/results
+trec_eval-9.0.7/individual/results
