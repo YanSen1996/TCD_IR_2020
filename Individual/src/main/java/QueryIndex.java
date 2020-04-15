@@ -96,7 +96,8 @@ public class QueryIndex {
                 // Save the results
                 for (int i = 0; i < hits.length; i++) {
                     Document hitDoc = indexSearcher.doc(hits[i].doc);
-                    String sResults = (j + 1) + " 0 " + hitDoc.get("ID").trim() + " " + (i + 1) + " " + hits[i].score + " run-tag";
+                    String sResults = (j + 1) + " 0 " + hitDoc.get("ID").trim() + " " + (i + 1) + " " + hits[i].score
+                            + " run-tag";
                     String outString = "Getting the result " + (i + 1) + " of query " + (j + 1) + "...";
                     resultsList.add(sResults);
                     System.out.println(outString);
@@ -105,8 +106,6 @@ public class QueryIndex {
         }
 
         // Create a results file
-        File results = new File("results");
-        results.createNewFile();
         System.out.println("\nCreating results file...");
         BufferedWriter resultsWriter = new BufferedWriter(new FileWriter("../trec_eval-9.0.7/individual/results"));
         for (String item : resultsList) {
