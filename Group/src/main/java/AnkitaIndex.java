@@ -34,7 +34,8 @@ public class AnkitaIndex {
 
 
     public static void main(String[] args) throws IOException {
-    	buildDocsIndex();
+        clearFolder(new File("index/ankita"));
+        buildDocsIndex();
     }
 
     public static void loadForBroadcastDocs(String pathToForBroadcast) throws IOException {
@@ -178,6 +179,27 @@ public class AnkitaIndex {
         drct.close();
     }
 
+    public static void clearFolder(File root) {
+
+        File files[] = root.listFiles();
+        if (files != null){
+            for (File f : files){
+                if (f.isDirectory()){
+                    clearFolder(f);
+                    try {
+                        f.delete();
+                    } catch (Exception e){}
+                } else {
+                    if (f.exists()){
+                        clearFolder(f);
+                        try {
+                            f.delete();
+                        } catch (Exception e){}
+                    }
+                }
+            }
+        }
+    }
 
     public static void buildDocsIndex() throws IOException {
 
