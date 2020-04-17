@@ -24,16 +24,16 @@ import java.util.Stack;
  * Hello world!
  */
 
-public class CreateIndex {
+public class SiqiIndex {
 
     // private static Object BM25Similarity;
 
-    private CreateIndex() {
+    private SiqiIndex() {
     }
 
     public static void main(String[] args) throws IOException {
         String usage = "java org.apache.lucene.demo.IndexFiles" + " [-index INDEX_PATH] [-docs DOCS_PATH] [-update]\n\n" + "This indexes the documents in DOCS_PATH, creating a Lucene index" + "in INDEX_PATH that can be searched with SearchFiles";
-        String indexPath = "index";
+        String indexPath = "index/siqi";
 
         //ft
         String[] docsArrayft = new String[610];

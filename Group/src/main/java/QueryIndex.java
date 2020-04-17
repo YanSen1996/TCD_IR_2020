@@ -23,7 +23,8 @@ import java.util.List;
 public class QueryIndex {
 
     // The location of the search index
-    private static String INDEX_DIRECTORY = "../Group/index";
+    private static String INDEX_DIRECTORY = "../Group/index/siqi";  // Siqi's Index
+    // private static String INDEX_DIRECTORY = "../Group/index/ankita";  // Ankita's Index
 
     // Limit the number of search results we get
     private static int MAX_RESULTS = 1000;
@@ -140,7 +141,7 @@ public class QueryIndex {
                     Document hitDoc = indexSearcher.doc(hits[i].doc);
 
                     String sResults = (j + 401) + " 0 " + hitDoc.get("DOCNO").trim() + " " + (i + 1) + " "
-                            + hits[i].score + " run-tag";
+                            + hits[i].score + " siqi-eng-single";
                     String outString = "Getting the result " + (i + 1) + " of query " + (j + 1) + "...";
                     resultsList.add(sResults);
                     System.out.println(outString);
