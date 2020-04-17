@@ -24,24 +24,24 @@ If successful, a response like the following would be shown:
 ## 3. To run the source code:
 To create the index, please enter the following command in a terminal window:
 ```shell
-$ java -cp target/Test1-1.0-SNAPSHOT.jar CreateIndex
+$ java -cp target/Assignment2-1.0-SNAPSHOT.jar SiqiIndex
 ```
 If successful, a response like the following would be shown:
 
-![Create_Success](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/2.png)
+![Create_Success](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images2/1.png)
 
 Then, enter the following command to query the index:
 ```shell
-$ java -cp target/Test1-1.0-SNAPSHOT.jar QueryIndex
+$ java -cp target/Assignment2-1.0-SNAPSHOT.jar QueryIndex
 ```
 A resopnse like the following wouldeb shown if successful:
 
-![Create_Results](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/3.png)
+![Create_Results](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images2/2.png)
 ## 4. To get the program's output:
 The project writes the results to a file called "results" which is in the folder with path "TCD_IR_2020\trec_eval-9.0.7\individual\".
 Optional: use the following command to enter the folder and open the file:
 ```shell
-$ cd ../trec_eval-9.0.7/individual/
+$ cd ../trec_eval-9.0.7/group/
 $ xdg-open results
 ```
 After viewing, press 'w' and 'q' to quit the file.
@@ -65,8 +65,8 @@ If 'make' command is already available, a response would be shown like below:
 
 For easier use, the QRelsCorrectedforTRECeval file has been renamed to 'qrels'. So, to view the scores, enter the command below:
 ```
-$ ./trec_eval individual/qrels individual/results
+$ ./trec_eval group/qrels group/results
 ```
 The scores would be shown like below in the terminal.
 
-![Scores](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images/4.png)
+![Scores](https://github.com/YanSen1996/TCD_IR_2020/blob/master/images2/3.png)
