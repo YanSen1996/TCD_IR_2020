@@ -23,8 +23,8 @@ import org.apache.lucene.store.FSDirectory;
 public class QueryIndex {
 
     // The location of the search index
-    // private static String INDEX_DIRECTORY = "../Group/index/siqi";  // Siqi's Index
-    private static String INDEX_DIRECTORY = "../Group/index/ankita";  // Ankita's Index
+    private static String INDEX_DIRECTORY = "../Group/index/siqi";  // Siqi's Index
+    // private static String INDEX_DIRECTORY = "../Group/index/ankita";  // Ankita's Index
 
     // Limit the number of search results we get
     private static int MAX_RESULTS = 1000;
@@ -118,12 +118,12 @@ public class QueryIndex {
         }
 
         // Create the query parser. The default search field is "words"
-        // QueryParser parser = new QueryParser("TEXT", analyzer); // single-field
-        QueryParser parser = new MultiFieldQueryParser(new String[] {LuceneConstants.HEADLINE,
-            LuceneConstants.TEXT, LuceneConstants.BYLINE, LuceneConstants.HEADING, LuceneConstants.HEADER,
-            LuceneConstants.FOOTNOTE, LuceneConstants.ADDRESS, LuceneConstants.AGENCY, LuceneConstants.SUMMARY,
-            LuceneConstants.TITLE, LuceneConstants.US_BUREAU, LuceneConstants.US_DEPARTMRNT, LuceneConstants.DATE_LINE,
-            LuceneConstants.SUBJECT}, analyzer); // multi-field
+        QueryParser parser = new QueryParser("TEXT", analyzer); // single-field
+        // QueryParser parser = new MultiFieldQueryParser(new String[] {LuceneConstants.HEADLINE,
+        //     LuceneConstants.TEXT, LuceneConstants.BYLINE, LuceneConstants.HEADING, LuceneConstants.HEADER,
+        //     LuceneConstants.FOOTNOTE, LuceneConstants.ADDRESS, LuceneConstants.AGENCY, LuceneConstants.SUMMARY,
+        //     LuceneConstants.TITLE, LuceneConstants.US_BUREAU, LuceneConstants.US_DEPARTMRNT, LuceneConstants.DATE_LINE,
+        //     LuceneConstants.SUBJECT}, analyzer); // multi-field
 
         String queryString = "";
         List<String> resultsList = new ArrayList<>();
@@ -151,7 +151,7 @@ public class QueryIndex {
                     	continue;
                     }
                     else {
-                        String sResults = (j + 401) + " 0 " + hitDoc.get("DOCNO").trim() + " " + (i + 1) + " " + hits[i].score + " ankita-cus-single";
+                        String sResults = (j + 401) + " 0 " + hitDoc.get("DOCNO").trim() + " " + (i + 1) + " " + hits[i].score + " siqi-cus-single";
                         String outString = "Getting the result " + (i + 1) + " of query " + (j + 1) + "...";
                         resultsList.add(sResults);
                         System.out.println(outString);
