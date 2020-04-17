@@ -98,7 +98,7 @@ public class SiqiIndex {
 
 
         Directory dir = FSDirectory.open(Paths.get(indexPath));
-        Analyzer analyzer = new EnglishAnalyzer();
+        Analyzer analyzer = new CustomAnalyzer();
         IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
         iwc.setSimilarity(new BooleanSimilarity());
         IndexWriter writer = new IndexWriter(dir, iwc);

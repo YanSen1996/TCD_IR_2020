@@ -36,7 +36,7 @@ public class AnkitaIndex {
     private final static String absPathToFinTimes = String.format("../documents/ft",currentRelativePath);
     private final static String absPathToLATimes = String.format("../documents/latimes",currentRelativePath);
 
-    static Analyzer analyzer = new EnglishAnalyzer();
+    static Analyzer analyzer = new CustomAnalyzer();
     static Similarity similarity = new BM25Similarity();
 
 

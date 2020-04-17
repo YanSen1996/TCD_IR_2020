@@ -2,6 +2,7 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
@@ -23,8 +24,8 @@ import java.util.List;
 public class QueryIndex {
 
     // The location of the search index
-    private static String INDEX_DIRECTORY = "../Group/index/siqi";  // Siqi's Index
-    // private static String INDEX_DIRECTORY = "../Group/index/ankita";  // Ankita's Index
+    // private static String INDEX_DIRECTORY = "../Group/index/siqi";  // Siqi's Index
+    private static String INDEX_DIRECTORY = "../Group/index/ankita";  // Ankita's Index
 
     // Limit the number of search results we get
     private static int MAX_RESULTS = 1000;
@@ -33,8 +34,9 @@ public class QueryIndex {
             throws IOException, ParseException, org.apache.lucene.queryparser.classic.ParseException {
 
         // Analyzer used by the query parser, the same as the one used in index
-        // EnglishAnalyzer shall be changed later
-        Analyzer analyzer = new EnglishAnalyzer();
+
+        // Analyzer analyzer = new EnglishAnalyzer();  // EnglishAnalyzer
+    	Analyzer analyzer = new CustomAnalyzer();  // CustomAnalyzer
 
         // Open the folder that contains our search index
         Directory directory = FSDirectory.open(Paths.get(INDEX_DIRECTORY));
@@ -117,7 +119,12 @@ public class QueryIndex {
         }
 
         // Create the query parser. The default search field is "words"
-        QueryParser parser = new QueryParser("TEXT", analyzer);
+        // QueryParser parser = new QueryParser("TEXT", analyzer); // single-field
+        QueryParser parser = new MultiFieldQueryParser(new String[] {LuceneConstants.HEADLINE,
+            LuceneConstants.TEXT, LuceneConstants.BYLINE, LuceneConstants.HEADING, LuceneConstants.HEADER,
+            LuceneConstants.FOOTNOTE, LuceneConstants.ADDRESS, LuceneConstants.AGENCY, LuceneConstants.SUMMARY,
+            LuceneConstants.TITLE, LuceneConstants.US_BUREAU, LuceneConstants.US_DEPARTMRNT, LuceneConstants.DATE_LINE,
+            LuceneConstants.SUBJECT}, analyzer); // multi-field
 
         String queryString = "";
         List<String> resultsList = new ArrayList<>();
@@ -137,14 +144,20 @@ public class QueryIndex {
                 ScoreDoc[] hits = indexSearcher.search(query, MAX_RESULTS).scoreDocs;
 
                 // Save the results
+                ArrayList<String> docNums = new ArrayList<String>();
                 for (int i = 0; i < hits.length; i++) {
                     Document hitDoc = indexSearcher.doc(hits[i].doc);
 
-                    String sResults = (j + 401) + " 0 " + hitDoc.get("DOCNO").trim() + " " + (i + 1) + " "
-                            + hits[i].score + " siqi-eng-single";
-                    String outString = "Getting the result " + (i + 1) + " of query " + (j + 1) + "...";
-                    resultsList.add(sResults);
-                    System.out.println(outString);
+                    if(docNums.contains(hitDoc.get("DOCNO").trim())) {
+                    	continue;
+                    }
+                    else {
+                        String sResults = (j + 401) + " 0 " + hitDoc.get("DOCNO").trim() + " " + (i + 1) + " " + hits[i].score + " ankita-cus-single";
+                        String outString = "Getting the result " + (i + 1) + " of query " + (j + 1) + "...";
+                        resultsList.add(sResults);
+                        System.out.println(outString);
+                        docNums.add(hitDoc.get("DOCNO").trim());
+                    }
                 }
             }
         }
